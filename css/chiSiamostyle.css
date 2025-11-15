@@ -1,0 +1,318 @@
+:root {
+    --colore-principale: #0b0c2a;
+    --colore-secondario: #d4af37;
+    --colore-terziario: #faf6eb;
+    --colore-secondario-chiaro: #d4af3769;
+    --colore-terziario-scuro: #f8ece1;
+    --bianco: #fbf8f8;
+    --nero: #0e0e0e;
+
+}
+
+#cart-count {
+    background-color: red;
+    background-position: center;
+    font-weight: 600;
+    border-radius: 100%;
+    position: absolute;
+    right: -7px;
+
+}
+
+.icon-contact {
+    color: var(--colore-secondario);
+    font-size: 30px;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: 'Kaushan Script';
+}
+
+h2 {
+    font-size: 35px;
+    font-family: 'Kaushan Script';
+}
+
+/* NAV BAR */
+.logo {
+    max-height: 3rem;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler {
+    color: var(--bianco);
+    z-index: 9999;
+}
+
+.nav-style {
+    background-color: rgba(0, 22, 44, 0.8) !important;
+    backdrop-filter: blur(20px);
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
+    padding: 0 2rem;
+    min-height: 3rem;
+}
+
+.navbar-nav {
+    align-items: center;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    color: var(--colore-secondario) !important;
+}
+
+.nav-link:hover {
+    color: var(--colore-terziario)  !important;
+    border-bottom: solid 3px var(--colore-secondario);
+}
+.chi-siamo-link{
+    color: var(--colore-terziario)  !important;
+    border-bottom: solid 3px var(--colore-secondario);
+
+}
+
+.angolo1{
+    background-image: url(../img/angolo.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 30rem;
+    height: 30rem;
+}
+.angolo2{
+    background-image: url(../img/angolo2.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 30rem;
+    height: 30rem;
+}
+.chi-siamo-title-mobile {
+   display: none;
+}
+.sezione-strappata{
+    background-color: var(--colore-terziario);
+    z-index: 200;
+}
+.wrapper-1{
+    z-index: 990;
+    position: relative;
+}
+
+/* SEZIONE 1 */
+.img-chi-siamo-1 {
+    width: 25rem;
+    height: auto;
+    border-radius: 100%;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+.chi-siamo {
+    background-color: var(--colore-terziario);
+    color: var(--nero);
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    margin-top: -8rem;
+    
+}
+
+.chi-siamo-1 {
+
+    padding-right: 3rem;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+    border-right: 3px solid transparent;
+    border-top: 3px solid transparent;
+    border-image: linear-gradient(90deg, #e5b310 0%, #f8f4f0 50%, #e5b310 100%) 1;
+    animation: scorribordo 5s linear infinite;
+
+}
+
+
+.chi-siamo-2 {
+    padding-left: 3rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    border-top: 3px solid transparent;
+    border-left: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    border-image: linear-gradient(90deg, #e5b310 0%, #f8f4f0 50%, #e5b310 100%) 1;
+    animation: scorribordo 5s linear infinite;
+}
+
+@keyframes scorribordo {
+    0% {
+        border-image-source: linear-gradient(90deg,
+                #e5b310 0%,
+                #f8f4f0 50%,
+                #e5b310 100%);
+    }
+
+    50% {
+        border-image-source: linear-gradient(90deg,
+                #f8f4f0 0%,
+                #e5b310 50%,
+                #f8f4f0 100%);
+    }
+
+    100% {
+        border-image-source: linear-gradient(90deg,
+                #e5b310 0%,
+                #f8f4f0 50%,
+                #e5b310 100%);
+    }
+}
+
+
+
+/* SEZIONE-CONTATTI */
+.contatti {
+    padding-bottom: 5rem !important;
+}
+
+.contenitore-contatti {
+    background-color: var(--bianco);
+    padding-top: 5rem;
+}
+
+.sezione-contatti {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.svg-contatti {
+    color: var(--colore-secondario) !important;
+}
+
+
+/* SEZIONE ACCORDION */
+.accordion {
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 1);
+
+}
+
+.contenitore-totale-accordion {
+    background: var(--colore-principale);
+    color: var(--colore-terziario);
+}
+
+.container-accordion {
+    padding: 5rem 0;
+}
+
+.accordion-button {
+    background-color: var(--colore-terziario);
+    color: var(--colore-principale);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--colore-secondario-chiaro);
+    color: var(--colore-principale);
+}
+
+.accordion-body {
+    background-color: var(--bianco);
+}
+
+.accordion-button:focus {
+    border: solid 2px var(--colore-secondario);
+    box-shadow: none;
+}
+
+.accordion-button::after {
+    display: none !important;
+}
+
+.icon-accordion {
+    transition: transform 0.3s;
+    color: var(--colore-secondario);
+}
+
+.accordion-button[aria-expanded="true"] .icon-accordion {
+    transform: rotate(180deg);
+}
+
+.bi-patch-question,
+.bi-signpost,
+.bi-person-arms-up,
+.bi-mailbox-flag,
+.bi-flag{
+    font-size: 50px;
+    color: var(--colore-secondario);
+}
+
+/* SEZIONE FOOTER*/
+footer {
+    background-color: var(--colore-principale);
+}
+
+.footer {
+    padding: 2rem 0;
+    width: 100%;
+    min-height: 8rem;
+    color: var(--bianco);
+}
+
+.logo-footer {
+    max-width: 12rem;
+}
+.btn-invia{
+    padding: 0.3rem 1rem;
+    background-color: var(--colore-secondario);
+    color: var(--colore-principale);
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+}
+.btn-invia:hover{
+    background-color: var(--colore-principale);
+    color: var(--colore-secondario);
+}
+
+@media (max-width: 1024px) {
+     .logo {
+        max-width: 30%;
+    }
+
+    #cart-count {
+        background-color: red;
+        background-position: center;
+        font-weight: 600;
+        border-radius: 100%;
+        position: absolute;
+        right: -15px
+    }
+    .chi-siamo-title-mobile {
+    padding: 3rem 0;
+    margin-top: 8rem;
+    display: block;
+}
+.sezione-strappata{
+    display: none;
+}
+}
+@media (max-width: 767px) {
+     .logo {
+        max-width: 60%;
+    }
+    .img-chi-siamo-1{
+        max-width: 80vw;
+    }
+    .chi-siamo-1{
+        padding: 0.6rem;
+    }
+    .chi-siamo-2{
+        padding: 0.6rem;
+    }
+    
+}

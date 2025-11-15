@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progetto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary nav-style fixed-top">
+            <div class="container">
+                <img src="./img/logo.png.png" alt="" class="logo">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 nav-list">
+                        <li class="nav-item">
+                            <a class="nav-link active home" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/chiSiamo.html">Chi siamo</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/shop.html">Shop</a>
+                        </li>
+                        <li class="nav-item position-relative">
+                            <a class="nav-link" href="pages/carrello.html">
+                                <i class="bi bi-cart4 fs-lg-3 fs-2"></i>
+                                <span id="cart-count" class="badge rounded-pill">
+                                    0
+                                </span>
+                            </a>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="sez-1 d-lg-flex align-items-center justify-content-center">
+            <div class="container">
+                <div class="flex-lg-row flex-column sez-1-wrapper gap-5 d-flex vh-lg-100">
+                    <div class="sez-1-l">
+                        <div class=" d-flex flex-column align-items-center text-center gap-md-5">
+                            <div class="cont-svg-sez-1">
+                                <i class="bi bi-balloon"></i>
+                            </div>
+                            <h1 class="fs-1">I migliori eventi di <span class="gold">Torino</span></h1>
+                            <p class="fs-4">Sei giovane, dinamico e cerchi il meglio della movida? Sei nel posto giusto!
+                                Qui trovi tutti gli eventi più cool e imperdibili dedicati a te: dai festival musicali
+                                alle serate di stand-up comedy, dalle mostre interattive ai raduni di cosplay, fino ai
+                                tornei di E-Sports più adrenalinici.</p>
+                        </div>
+                    </div>
+                    <div class="sez-1-r">
+                        <div class="cont-animazione">
+                            <div class="cont-esterno display-relative">
+                                <div class="n-event-f d-flex gap-2">
+                                    <i class="bi bi-calendar-check-fill"></i>
+                                    <span fon>EVENTI FUTURI: 6</span>
+                                </div>
+                                <div class="n-event-p d-flex gap-2">
+                                    <i class="bi bi-calendar-x"></i>
+                                    <span>EVENTI PASSATI: 15</span>
+                                </div>
+                                <div class="cont-interno">
+                                    <i class="bi bi-ticket-perforated"></i>
+                                    <h2 class="fs-3">Guarda l'ultimo Evento in programma</h2>
+                                    <h3 class="fs-4">Torneo di E-Sports Nazionale</h3>
+                                    <a href="./pages/shop.html"><button class="btn-cont">SCOPRI DI PIU'</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div id="eventi">
+            <div class="eventi-futuri">
+                <div class="container">
+                    <div class="text-center">
+                        <i class="bi bi-calendar-check calendar-check"></i>
+                        <h2 class="fs-1">I nostri ultimi 3 eventi in programma.</h2>
+                    </div>
+                    <div class="card-container d-lg-flex gap-3">
+                        <div class="card col-lg-4">
+                            <img src="./img/e-sport.jpg" alt="" class="img-eventi">
+                            <h3>Torneo di E-Sports Nazionale</h3>
+                            <p>L'evento si terrà il 25-10-2025</p>
+                            <p>Assisti ai migliori gamer sfidarsi nel torneo nazionale del tuo videogioco preferito.
+                                Tifa per il tuo team e goditi l'adrenalina della competizione.</p>
+                            <a href="./pages/shop.html" class="btn-compra">Scopri tutti gli eventi</a>
+                        </div>
+                        <div class="card col-lg-4">
+                            <img src="./img/festa-in-spiaggia.jpg" alt="" class="img-eventi">
+                            <h3>Festa Estiva in Spiaggia</h3>
+                            <p>L'evento si terrà il 18-10-2025</p>
+                            <p>Preparati per un'esclusiva festa estiva con DJ set mozzafiato, cocktail bar e area relax
+                                direttamente sulla sabbia dorata. La musica dance e chill-out ti accompagnerà fino
+                                all'alba.</p>
+                            <a href="./pages/shop.html" class="btn-compra">Scopri tutti gli eventi</a>
+                        </div>
+                        <div class="card col-lg-4">
+                            <img src="./img/comicon.jpg" alt="" class="img-eventi">
+                            <h3>Comic Con Milano 2024</h3>
+                            <p>L'evento si terrà il 10-10-2025</p>
+                            <p>È tornato l'evento annuale imperdibile dedicato a fumetti, videogiochi, cosplayer e tutta
+                                la cultura pop! Avrai l'opportunità di incontrare i tuoi artisti preferiti e partecipare
+                                a panel e tornei entusiasmanti.</p>
+                            <a href="./pages/shop.html" class="btn-compra">Scopri tutti gli eventi</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="eventi-passati">
+                <div class="container eventi-passati-wrapper">
+                    <div class="text-center">
+                        <i class="bi bi-calendar-x calendar-x"></i>
+                        <h2 class="fs-1">Gli ultimi 3 eventi passati.</h2>
+                    </div>
+                    <div class="card-container d-lg-flex gap-3">
+                        <div class="card col-lg-4">
+                            <img src="./img/birra.jpg" alt="">
+                            <h3>Festival della Birra Artigianale</h3>
+                            <p>Vieni a degustare centinaia di birre artigianali provenienti da birrifici locali e
+                                internazionali, accompagnate da musica dal vivo e deliziosi stand gastronomici. Un
+                                paradiso per gli amanti della buona birra!</p>
+                            <a href="./pages/shop.html" class="btn-compra">Scopri tutti gli eventi</a>
+                        </div>
+                        <div class="card col-lg-4">
+                            <img src="./img/jazz.jpg" alt="">
+                            <h3>Notte Bianca del Jazz.</h3>
+                            <p>Una notte intera dedicata al jazz, con performance live in vari punti della città e jam
+                                session improvvisate. Un'occasione unica per gli amanti del genere.</p>
+                            <a href="./pages/shop.html" class="btn-compra">Scopri tutti gli eventi</a>
+                        </div>
+                        <div class="card col-lg-4">
+                            <img src="./img/fiera-del-libro.jpg" alt="">
+                            <h3>Fiera del Libro Indipendente.</h3>
+                            <p>Scopri nuove voci e storie nella fiera dedicata all'editoria indipendente. Incontra gli
+                                autori, partecipa a presentazioni e acquista libri unici.</p>
+                            <a href="./pages/shop.html" class="btn-compra">Scopri tutti gli eventi</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="contatti">
+                <div
+                    class="container d-lg-flex gap-lg-5 d-flex flex-column flex-column-reverse flex-lg-row align-items-center">
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2496.622343549305!2d-0.12471330867526355!3d51.50062067879539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604c4484fffff%3A0x7edbba5f72503260!2s67%20Bridge%20St%2C%20London%20SW1A%202PW%2C%20Regno%20Unito!5e1!3m2!1sit!2sit!4v1753693793136!5m2!1sit!2sit"
+                            class="map" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <section id="contatti" class="container my-5 wrapper-contatti-lista">
+                        <h2 class="text-center mb-4">Contattaci</h2>
+
+                        <div class="gap-lg-5 d-lg-flex contatti-lista">
+                            <div>
+                                <h4><span class="icon-contact"><i class="bi bi-geo-alt"></i> </span> Dove siamo</h4>
+                                <p class="fs-5">Via delle Stelle 42, 00100 Roma (RM), Italia</p>
+                                <h4><span class="icon-contact"><i class="bi bi-phone"></i></span> Telefono</h4>
+                                <p class="fs-5">+39 06 1234 5678</p>
+                                <h4><span class="icon-contact"><i class="bi bi-envelope"></i></span> Email</h4>
+                                <p class="fs-5"><a href="mailto:info@esempioweb.it">info@esempioweb.it</a></p>
+                            </div>
+
+                            <div>
+                                <h4><span class="icon-contact"><i class="bi bi-clock-history"></i></span> Orari di
+                                    apertura</h4>
+                                <p class="fs-5">Lun–Ven: 09:00 – 18:00<br>Sabato: 10:00 – 13:00<br>Domenica: chiuso</p>
+                                <h4>Seguici</h4>
+                                <p class="fs-5">
+                                    <a href="#"><i class="bi bi-instagram svg-contatti fs-2"></i></a>
+                                    <a href="#"><i class="bi bi-facebook svg-contatti fs-2"></i></a>
+                                    <a href="#"><i class="bi bi-linkedin svg-contatti fs-2"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer d-flex align-items-center">
+                <div class="footer-wrapper d-flex flex-column flex-md-row w-100 justify-content-between h-100">
+
+
+                    <div class="col-md-3 text-center">
+                        <p class="mb-0 fs-6">&copy; 2025 EventsforEveryone. Tutti i diritti riservati a Cassolo Tommaso.
+                        </p>
+                    </div>
+
+
+                    <div class="col-md-3 text-center mt-3 mt-md-0">
+                        <a href="#" class="text-white text-decoration-none">Privacy</a> |
+                        <a href="#" class="text-white text-decoration-none">Policy</a>
+                    </div>
+
+                    <div class="col-md-3 d-flex justify-content-center mt-3 mt-md-0">
+                        <img src="./img/logo.png.png" alt="" class="logo-footer">
+                    </div>
+
+
+                    <div class="col-md-3 text-center mt-3 mt-md-0">
+                        <a href="#" class="text-white text-decoration-none me-3"><i
+                                class="bi bi-linkedin fs-2"></i></i></a>
+                        <a href="#" class="text-white text-decoration-none me-3"><i
+                                class="bi bi-instagram fs-2"></i></a>
+                        <a href="#" class="text-white text-decoration-none"><i class="bi bi-facebook fs-2"></i></i></a>
+                    </div>
+                </div>
+            </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <script src="./js/numeroElementiCarrello.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

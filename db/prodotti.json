@@ -1,0 +1,195 @@
+{
+  "prodotti": [
+    {
+      "id": "e115",
+      "nome": "Torneo di E-Sports Nazionale",
+      "descrizione": "Assisti ai migliori gamer sfidarsi nel torneo nazionale del tuo videogioco preferito. Tifa per il tuo team e goditi l'adrenalina della competizione. Saranno disponibili anche immagini esclusive dell'evento per l'acquisto.",
+      "prezzo": 20,
+      "immagine": "../img/e-sport.jpg",
+      "data": "25-10-2025",
+      "disponibilita": true
+    },
+    {
+      "id": "e101",
+      "nome": "Festa Estiva in Spiaggia",
+      "descrizione": "Preparati per un'esclusiva festa estiva con DJ set mozzafiato, cocktail bar e area relax direttamente sulla sabbia dorata. La musica dance e chill-out ti accompagnerà fino all'alba. Saranno disponibili anche immagini esclusive dell'evento per l'acquisto, perfette per rivivere i momenti più belli!",
+      "prezzo": 25,
+      "immagine": "../img/festa-in-spiaggia.jpg",
+      "data": "18-10-2025",
+      "disponibilita": true
+    },
+    {
+      "id": "e103",
+      "nome": "Comic Con Milano 2025",
+      "descrizione": "È tornato l'evento annuale imperdibile dedicato a fumetti, videogiochi, cosplayer e tutta la cultura pop! Avrai l'opportunità di incontrare i tuoi artisti preferiti e partecipare a panel e tornei entusiasmanti. Saranno disponibili anche immagini esclusive dell'evento per l'acquisto, ideali per i fan!",
+      "prezzo": 30,
+      "immagine": "../img/comicon.jpg",
+      "data": "10-10-2025",
+      "disponibilita": true
+    },
+    {
+      "id": "e102",
+      "nome": "Concerto Rock al Parco",
+      "descrizione": "Non perderti una serata imperdibile con le migliori band rock emergenti e ospiti speciali che faranno vibrare il parco! Troverai food truck con delizie e birre artigianali per completare l'esperienza. Saranno disponibili anche **immagini esclusive dell'evento** per l'acquisto.",
+      "prezzo": 18.5,
+      "immagine": "../img/concerto-rock.jpg",
+      "data": "01-07-2025",
+      "disponibilita": false
+    },
+    {
+      "id": "e104",
+      "nome": "Cinema Sotto le Stelle: 'Interstellar'",
+      "descrizione": "Goditi una magica proiezione all'aperto del capolavoro di fantascienza 'Interstellar'. Porta la tua coperta e lasciati trasportare dalla storia sotto un cielo stellato. Saranno disponibili anche **immagini esclusive dell'evento** per l'acquisto, un ricordo unico della serata.",
+      "prezzo": 10,
+      "immagine": "../img/cinema.jpg",
+      "data": "22-08-2025",
+      "disponibilita": true
+    },
+    {
+      "id": "e105",
+      "nome": "Spettacolo Teatrale: 'Romeo e Giulietta'",
+      "descrizione": "Lasciati emozionare da una rivisitazione moderna e coinvolgente del classico di Shakespeare, 'Romeo e Giulietta', messa in scena da una compagnia teatrale pluripremiata. Emozioni garantite in ogni atto! Saranno disponibili anche **immagini esclusive dell'evento** per l'acquisto.",
+      "prezzo": 35,
+      "immagine": "../img/giulietta.jpg",
+      "data": "10-09-2025",
+      "disponibilita": true
+    },
+    {
+      "id": "e106",
+      "nome": "Festival della Birra Artigianale",
+      "descrizione": "Vieni a degustare centinaia di birre artigianali provenienti da birrifici locali e internazionali, accompagnate da musica dal vivo e deliziosi stand gastronomici. Un paradiso per gli amanti della buona birra! Saranno disponibili anche **immagini esclusive dell'evento** per l'acquisto.",
+      "prezzo": 12,
+      "immagine": "../img/birra.jpg",
+      "data": "15-06-2025",
+      "disponibilita": false
+    },
+    {
+      "id": "e107",
+      "nome": "Notte Bianca del Jazz",
+      "descrizione": "Una notte intera dedicata al jazz, con performance live in vari punti della città e jam session improvvisate. Un'occasione unica per gli amanti del genere. Saranno disponibili anche **immagini esclusive dell'evento** per l'acquisto.",
+      "prezzo": 0,
+      "immagine": "../img/jazz.jpg",
+      "data": "25-07-2025",
+      "disponibilita": false
+    },
+    {
+      "id": "e108",
+      "nome": "Workshop di Fumetto Manga",
+      "descrizione": "Impara le basi del disegno manga con un artista professionista in questo workshop intensivo. Materiali inclusi e possibilità di far recensire i propri lavori. Saranno disponibili anche immagini esclusive dell'evento** per l'acquisto.",
+      "prezzo": 50,
+      "immagine": "../img/fumetto.jpg",
+      "data": "05-08-2025",
+      "disponibilita": true
+    },
+    {
+      "id": "e110",
+      "nome": "Concerto al Castello",
+      "descrizione": "Preparati a scatenarti! Le vibrazioni più cool e i suoni più esplosivi illumineranno il cortile di un antico castello. Vivi un concerto indimenticabile, balla sotto le stelle e crea ricordi epici. Saranno disponibili anche immagini esclusive dell'evento per l'acquisto!",
+      "prezzo": 40,
+      "immagine": "../img/castello.jpg",
+      "data": "20-09-2025",
+      "disponibilita": true
+    },
+    {
+      "id": "e111",
+      "nome": "Open Air Festival EDM",
+      "descrizione": "Il più grande festival EDM dell'anno ti aspetta con DJ di fama internazionale e uno show di luci e suoni senza precedenti. Preparati a ballare fino all'alba! Saranno disponibili anche **immagini esclusive dell'evento** per l'acquisto.",
+      "prezzo": 60,
+      "immagine": "../img/concerto.jpg",
+      "data": "01-10-2025",
+      "disponibilita": true
+    },
+    {
+      "id": "e112",
+      "nome": "Fiera del Libro Indipendente",
+      "descrizione": "Scopri nuove voci e storie nella fiera dedicata all'editoria indipendente. Incontra gli autori, partecipa a presentazioni e acquista libri unici. Saranno disponibili anche **immagini esclusive dell'evento** per l'acquisto.",
+      "prezzo": 8,
+      "immagine": "../img/fiera-del-libro.jpg",
+      "data": "10-05-2025",
+      "disponibilita": false
+    },
+    {
+      "id": "e113",
+      "nome": "Serata di Stand-Up Comedy",
+      "descrizione": "Una serata all'insegna delle risate con i migliori comici emergenti e affermati della scena italiana. Porta i tuoi amici per una dose di buon umore! Saranno disponibili anche **immagini esclusive dell'evento** per l'acquisto.",
+      "prezzo": 15,
+      "immagine": "../img/comedy.jpg",
+      "data": "18-08-2025",
+      "disponibilita": true
+    },
+    {
+      "id": "e114",
+      "nome": "Mostra Interattiva di Scienza",
+      "descrizione": "Esplora il mondo della scienza con esperimenti interattivi, installazioni multimediali e laboratori per tutte le età. Impara divertendoti! Saranno disponibili anche **immagini esclusive dell'evento** per l'acquisto.",
+      "prezzo": 12.5,
+      "immagine": "../img/scienza.jpg",
+      "data": "03-07-2025",
+      "disponibilita": false
+    }
+  ],
+  "carrello": [
+    {
+      "id": "e101",
+      "nome": "Festa Estiva in Spiaggia",
+      "descrizione": "Preparati per un'esclusiva festa estiva con DJ set mozzafiato, cocktail bar e area relax direttamente sulla sabbia dorata. La musica dance e chill-out ti accompagnerà fino all'alba. Saranno disponibili anche immagini esclusive dell'evento per l'acquisto, perfette per rivivere i momenti più belli!",
+      "prezzo": 25,
+      "immagine": "../img/festa-in-spiaggia.jpg",
+      "data": "18-10-2025",
+      "disponibilita": true
+    },
+    {
+      "id": "e101",
+      "nome": "Festa Estiva in Spiaggia",
+      "descrizione": "Preparati per un'esclusiva festa estiva con DJ set mozzafiato, cocktail bar e area relax direttamente sulla sabbia dorata. La musica dance e chill-out ti accompagnerà fino all'alba. Saranno disponibili anche immagini esclusive dell'evento per l'acquisto, perfette per rivivere i momenti più belli!",
+      "prezzo": 25,
+      "immagine": "../img/festa-in-spiaggia.jpg",
+      "data": "18-10-2025",
+      "disponibilita": true
+    },
+    {
+      "id": "e103",
+      "nome": "Comic Con Milano 2025",
+      "descrizione": "È tornato l'evento annuale imperdibile dedicato a fumetti, videogiochi, cosplayer e tutta la cultura pop! Avrai l'opportunità di incontrare i tuoi artisti preferiti e partecipare a panel e tornei entusiasmanti. Saranno disponibili anche immagini esclusive dell'evento per l'acquisto, ideali per i fan!",
+      "prezzo": 30,
+      "immagine": "../img/comicon.jpg",
+      "data": "10-10-2025",
+      "disponibilita": true
+    },
+    {
+      "id": "e103",
+      "nome": "Comic Con Milano 2025",
+      "descrizione": "È tornato l'evento annuale imperdibile dedicato a fumetti, videogiochi, cosplayer e tutta la cultura pop! Avrai l'opportunità di incontrare i tuoi artisti preferiti e partecipare a panel e tornei entusiasmanti. Saranno disponibili anche immagini esclusive dell'evento per l'acquisto, ideali per i fan!",
+      "prezzo": 30,
+      "immagine": "../img/comicon.jpg",
+      "data": "10-10-2025",
+      "disponibilita": true
+    },
+    {
+      "id": "e101",
+      "nome": "Festa Estiva in Spiaggia",
+      "descrizione": "Preparati per un'esclusiva festa estiva con DJ set mozzafiato, cocktail bar e area relax direttamente sulla sabbia dorata. La musica dance e chill-out ti accompagnerà fino all'alba. Saranno disponibili anche immagini esclusive dell'evento per l'acquisto, perfette per rivivere i momenti più belli!",
+      "prezzo": 25,
+      "immagine": "../img/festa-in-spiaggia.jpg",
+      "data": "18-10-2025",
+      "disponibilita": true
+    },
+    {
+      "id": "e101",
+      "nome": "Festa Estiva in Spiaggia",
+      "descrizione": "Preparati per un'esclusiva festa estiva con DJ set mozzafiato, cocktail bar e area relax direttamente sulla sabbia dorata. La musica dance e chill-out ti accompagnerà fino all'alba. Saranno disponibili anche immagini esclusive dell'evento per l'acquisto, perfette per rivivere i momenti più belli!",
+      "prezzo": 25,
+      "immagine": "../img/festa-in-spiaggia.jpg",
+      "data": "18-10-2025",
+      "disponibilita": true
+    },
+    {
+      "id": "e115",
+      "nome": "Torneo di E-Sports Nazionale",
+      "descrizione": "Assisti ai migliori gamer sfidarsi nel torneo nazionale del tuo videogioco preferito. Tifa per il tuo team e goditi l'adrenalina della competizione. Saranno disponibili anche immagini esclusive dell'evento per l'acquisto.",
+      "prezzo": 20,
+      "immagine": "../img/e-sport.jpg",
+      "data": "25-10-2025",
+      "disponibilita": true
+    }
+  ]
+}
