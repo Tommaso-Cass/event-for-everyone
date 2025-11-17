@@ -1,5 +1,7 @@
+
+
 class Prodotto {
-    constructor(nome, prezzo, immagine, descrizione, disponibilita) {
+    letructor(nome, prezzo, immagine, descrizione, disponibilita) {
         this.nome = nome;
         this.prezzo = prezzo;
         this.immagine = immagine;
@@ -12,27 +14,24 @@ class Prodotto {
 let showroom = document.querySelector("#showroom");
 
 
-function mostraProdotti() {
+async function mostraProdotti() {
 
-    const URL = "http://localhost:3000/prodotti";
 
-    fetch(URL)
-        .then(data => {
-            return data.json();
-        })
-        .then(response => {
-            console.log(response);
-            let prodotti = response;
-            prodotti.forEach(prodotto => {
-                showroom.appendChild(creaCard(prodotto));
+    const { data: eventi, error } = await supabaseClient
+        .from('prodotti') // CORRETTO: Usiamo 'prodotti' come specificato
+        .select('*');
+    if (error) {
+        console.error('Errore nel caricamento degli eventi:', error);
+        return;
+    }
 
-            });
-        })
+
+    eventi.forEach(prodotto => {
+        showroom.appendChild(creaCard(prodotto));
+    });
 }
 
 document.addEventListener("DOMContentLoaded", mostraProdotti);
-
-
 
 let barraRicerca = document.querySelector("#barraRicerca");
 
@@ -77,7 +76,7 @@ function creaCard(prodotto) {
     let dataEvento = document.createElement("p");
     dataEvento.setAttribute("class", "card-text");
 
-   
+
     if (prodotto.data) {
         let dataFormattata = new Date(prodotto.data.split("-").reverse().join("-")).toLocaleDateString('it-IT', {
             year: 'numeric',
@@ -117,6 +116,7 @@ function creaCard(prodotto) {
     btnVisualizza.addEventListener("click", function () {
         console.log(prodotto.id);
         window.location.href = `singoloProdotto.html?id=${prodotto.id}`;
+        
     });
 
 
@@ -175,57 +175,77 @@ function creaCard(prodotto) {
 }
 
 
-// function postInCarrello(prodotto){
-//     const URL = "http://localhost:3000/carrello";
-//     fetch(URL, {
-//         method: "POST",
-//         headers:{
-//             "Content-type": "application/json"
-//         },
-//         body: JSON.stringify(prodotto)
-//     })
-//     .then(data =>{
-//         console.log("prodotto aggiunto", data);
-//     })  
-// }
+// Funzione postInCarrello aggiornata con Supabase
+// Nel tuo shopscript.js
 
-
-//Con Async Await
 async function postInCarrello(prodotto) {
-    const response = await fetch("http://localhost:3000/carrello", {
-        method: "POST",
-        headers: {
-            "Content-type": "application/json"
-        },
-        body: JSON.stringify(prodotto)
-    })
+   
+    const { id, disponibilita, ...itemToInsert } = prodotto;
 
-    const data = await response.json();
-    console.log("prodotto aggiunto", data);
+    const { data, error } = await supabaseClient
+        .from('carrello')
+        .insert([itemToInsert]) // Inseriamo solo l'oggetto pulito
+        .select();
 
-
-
+    if (error) {
+        console.error("Errore nell'aggiunta al carrello:", error);
+    } else {
+        console.log("prodotto aggiunto", data);
+        if (typeof aggiornaContatoreCarrello === 'function') {
+             aggiornaContatoreCarrello(); 
+        }
+    }
 }
 
 
 const icona = document.querySelector('.animazione-tremolio');
 
-setInterval(() => {
-    icona.classList.remove('tremolio');
+if (icona) { // Aggiunto if per gestire il TypeError
+    setInterval(() => {
+        icona.classList.remove('tremolio');
 
-    setTimeout(() => {
-        icona.classList.add('tremolio');
-    }, 500);
-}, 2000);
+        setTimeout(() => {
+            icona.classList.add('tremolio');
+        }, 500);
+    }, 2000);
+}
 
 
 let modal = document.querySelector(".modal");
 let btnClose = document.querySelector(".btn-close");
 
-btnClose.addEventListener("click", chiudiModal);
-
-
-function chiudiModal(){
-    modal.classList.remove("modal-display");
-    modal.classList.add("modal-display-none")
+if (btnClose) { 
+    btnClose.addEventListener("click", chiudiModal);
 }
+
+
+function chiudiModal() {
+    if (modal) {
+        modal.classList.remove("modal-display");
+        modal.classList.add("modal-display-none")
+    }
+}
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+
+    let modalId = 'offerModal';
+
+    let hasSeenModalKey = 'hasSeenShopOfferModal';
+
+
+    if (sessionStorage.getItem(hasSeenModalKey) !== 'true') {
+
+
+        let offerModalElement = document.getElementById(modalId);
+        if (offerModalElement) {
+            let myModal = new bootstrap.Modal(offerModalElement);
+
+            myModal.show();
+
+
+            sessionStorage.setItem(hasSeenModalKey, 'true');
+        }
+    }
+});
